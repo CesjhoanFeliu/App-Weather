@@ -1,0 +1,13 @@
+body {
+  background-color: #2f3544;
+}
+
+.App {
+  text-align: center;
+}
+.input-group {
+  width: 60%;
+}
+img {
+  max-width: 60%;
+}
