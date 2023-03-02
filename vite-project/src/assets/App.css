@@ -11,3 +11,25 @@ body {
 img {
   max-width: 60%;
 }
+
+.card-title {
+  position: absolute;
+  padding: 20px;
+}
+.card-date {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 60px;
+}
+.card-temp {
+  position: absolute;
+  padding-left: 33px;
+  margin-top: 360px;
+  font-size: 50px;
+}
+.card-desc {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 460px;
+  text-transform: capitalize;
+}
