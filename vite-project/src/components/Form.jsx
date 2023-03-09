@@ -16,11 +16,12 @@ function Form({ newLocation }) {
           <input
             type="text"
             className="form-control"
-            placeholder="Ciudad"
+            placeholder="Ciudad 🗽"
             onChange={(e) => setCity(e.target.value)}
           />
-          <button className="btn btn-primary input-group-text" type="submit">
-            Buscar
+
+          <button className="buttonn-27" type="submit" role="button">
+            Buscar <span>🔎</span>
           </button>
         </div>
       </form>

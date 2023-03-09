@@ -1,5 +1,6 @@
 import React from "react";
 import Spinner from "./Spinner";
+
 function Card({ showData, loadingData, Wheather, forecast }) {
   let today = new Date();
   let day = today.getDate();
@@ -52,6 +53,7 @@ function Card({ showData, loadingData, Wheather, forecast }) {
       " " +
       forecast.list[3].dt_txt.substring(11, 13);
   }
+
   return (
     <div className="mt-5">
       {showData === true ? (
@@ -71,7 +73,7 @@ function Card({ showData, loadingData, Wheather, forecast }) {
                 <img
                   src="https://images.pexels.com/photos/3859774/pexels-photo-3859774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Ciudad IMG"
-                  className="img-fluid rounded-start"
+                  className="img-fluid rounded-start imagen"
                 />
               </div>
               <div className="col-md-8">
@@ -99,8 +101,8 @@ function Card({ showData, loadingData, Wheather, forecast }) {
                 <div className="row mt-4">
                   <div className="col">
                     <p>{forecastDate3}h</p>
+                    <img src={iconUrl3} alt="Icon Forecast" />
                     <p className="description">
-                      <img src={iconUrl3} alt="Icon Forecast" />
                       {forecast.list[1].weather[0].description}
                     </p>
                     <p className="temp">
@@ -108,9 +110,9 @@ function Card({ showData, loadingData, Wheather, forecast }) {
                     </p>
                   </div>
                   <div className="col">
-                    <p>{forecastDate6}h</p>
+                    <p>{forecastDate6}h</p>{" "}
+                    <img src={iconUrl6} alt="Icon Forecast" />
                     <p className="description">
-                      <img src={iconUrl6} alt="Icon Forecast" />
                       {forecast.list[2].weather[0].description}
                     </p>
                     <p className="temp">
@@ -118,9 +120,9 @@ function Card({ showData, loadingData, Wheather, forecast }) {
                     </p>
                   </div>
                   <div className="col">
-                    <p>{forecastDate9}h</p>
+                    <p>{forecastDate9}h</p>{" "}
+                    <img src={iconUrl9} alt="Icon Forecast" />
                     <p className="description">
-                      <img src={iconUrl9} alt="Icon Forecast" />
                       {forecast.list[3].weather[0].description}
                     </p>
                     <p className="temp">

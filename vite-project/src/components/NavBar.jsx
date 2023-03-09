@@ -4,7 +4,9 @@ function NavBar() {
   return (
     <nav className="navbar bg-black text-light mb-5">
       <div className="container-fluid">
-        <h3 className="mx-auto">Predicción Meteorológica</h3>
+        <h3 className="mx-auto">
+          Predicción Meteorológica <span>⛅</span>
+        </h3>
       </div>
     </nav>
   );
